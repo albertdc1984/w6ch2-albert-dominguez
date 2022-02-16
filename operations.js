@@ -5,7 +5,12 @@ const operations = (a, b) => {
   const resta = aN - bN;
   const multiplicacio = aN * bN;
   const divisio = aN / bN;
-  return [suma, resta, multiplicacio, divisio];
+  return [
+    { name: "suma", result: suma },
+    { name: "resta", result: resta },
+    { name: "multiplicació", result: multiplicacio },
+    { name: "divisió", result: divisio },
+  ];
 };
 
 module.exports = operations;
